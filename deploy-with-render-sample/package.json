@@ -1,0 +1,13 @@
+{
+  "name": "deploying-backend-with-render-sample",
+  "version": "1.0.0",
+  "description": "Deploy a back end application using Render",
+  "main": "app.js",
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.1",
+	"pg": "^8.5.1"
+  }
+}
