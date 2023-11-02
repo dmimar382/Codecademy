@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envelope Budgeting</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="#create-envelope">Create Envelope</a></li>
+            <li><a href="#envelopes">Envelopes</a></li>
+            <li><a href="#spend-money">Spend Money</a></li>
+            <li><a href="#delete-envelope">Delete Envelope</a></li>
+        </ul>
+    </nav>
+    <header>
+        <h1>Envelope Budgeting</h1>
+    </header>
+
+    <main>
+        <div class="container">
+            <section class="create-envelope">
+                <h2>Create Envelope</h2>
+                <form id="create-envelope-form">
+                    <div class="form-group">
+                        <label for="envelope-name">Envelope Name:</label>
+                        <input type="text" id="envelope-name" value ="" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="envelope-balance">Initial Balance:</label>
+                        <input type="number" id="envelope-balance" value= "" required>
+                    </div>
+                    <button type="submit" id="create-envelope">Create Envelope</button>
+                </form>
+            </section>
+
+            <section class="envelopes">
+                <h2>Envelopes</h2>
+                <div id="envelopes-list">
+
+
+
+                </div>
+            </section>
+
+            <section class="spend-money">
+                <h2>Spend Money</h2>
+                <form id="spend-money-form">
+                    <div class="form-group">
+                        <label for="spend-envelope-select">Select Envelope:</label>
+                        <select id="spend-envelope-select" value ="" required></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="spend-amount">Amount Spent:</label>
+                        <input type="number" id="spend-amount" value="" required>
+                    </div>
+                    <div id="error-message">
+
+                        
+                    </div>
+                    <button type="submit" id="spend-money">Spend Money</button>
+                </form>
+            </section>
+
+            <section class="delete-envelope">
+                <h2>Delete Envelope</h2>
+                <form id="delete-envelope-form">
+                    <div class="form-group">
+                        <label for="delete-envelope-select">Select Envelope:</label>
+                        <select id="delete-envelope-select" required></select>
+                    </div>
+                    <button type="submit" id="delete-envelope">Delete Envelope</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <script src="script.js"></script>
+    
+</body>
+
+<!-- <footer>
+    <p>&copy; 2023 Envelope Budgeting. All rights reserved.</p>
+</footer> -->
+</html>
